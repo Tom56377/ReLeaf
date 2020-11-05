@@ -31,7 +31,6 @@ public class ReLeafReadAndReply {
                     " may help you figure out your current issue");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
 
-
         }
 
         /*default communication issue message*/
