@@ -31,7 +31,9 @@ public class ReLeafMain {
         reLeafMainMessageBox.setLineWrap(true);
         reLeafMainMessageBox.setWrapStyleWord(true);
         reLeafMainMessageBox.setEditable(false);
-        c.gridx = 1;
+        c.fill = GridBagConstraints.HORIZONTAL;
+        c.gridwidth = 3;
+        c.gridx = 0;
         c.gridy = 0;
         scroll1.getViewport().add(reLeafMainMessageBox);
         scroll1.setPreferredSize(new Dimension(200,100));
