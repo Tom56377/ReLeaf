@@ -3,6 +3,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
+
 
 public class ReLeafMain {
 
@@ -16,6 +18,12 @@ public class ReLeafMain {
         /*create window*/
         JFrame frame = new JFrame("ReLeaf");  //create frame
         frame.getContentPane().setPreferredSize(new Dimension(500,350));
+        /*create window continued*/
+        frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        frame.setVisible(true);
 
 
         /*set panel and layout*/
@@ -31,10 +39,14 @@ public class ReLeafMain {
         reLeafMainMessageBox.setLineWrap(true);
         reLeafMainMessageBox.setWrapStyleWord(true);
         reLeafMainMessageBox.setEditable(false);
-        c.gridx = 1;
+        c.fill = GridBagConstraints.HORIZONTAL;
+        c.ipady = 40;      //make this component tall
+        c.weightx = 0.0;
+        c.gridwidth = 8;
+        c.gridx = -3;
         c.gridy = 0;
         scroll1.getViewport().add(reLeafMainMessageBox);
-        scroll1.setPreferredSize(new Dimension(200,100));
+        //scroll1.setPreferredSize(new Dimension(200,100));
         panel.add(scroll1,c);
 
 
@@ -47,7 +59,7 @@ public class ReLeafMain {
         c.gridx = 1;
         c.gridy = 3;
         scroll2.getViewport().add(userTextArea);
-        scroll2.setPreferredSize(new Dimension(200,100));
+        //scroll2.setPreferredSize(new Dimension(200,100));
         panel.add(scroll2,c);
 
 
@@ -72,11 +84,7 @@ public class ReLeafMain {
 
 
 
-        /*create window continued*/
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
+
 
     }
 
