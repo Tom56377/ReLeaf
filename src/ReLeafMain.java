@@ -26,10 +26,6 @@ public class ReLeafMain {
         frame.setVisible(true);
 
 
-        /*set panel and layout*/
-        JPanel panel = new JPanel(new GridBagLayout());
-        GridBagConstraints c = new GridBagConstraints();
-        frame.add(panel);
 
 
         /*userInput text area*/
@@ -39,15 +35,9 @@ public class ReLeafMain {
         reLeafMainMessageBox.setLineWrap(true);
         reLeafMainMessageBox.setWrapStyleWord(true);
         reLeafMainMessageBox.setEditable(false);
-        c.fill = GridBagConstraints.HORIZONTAL;
-        c.ipady = 40;      //make this component tall
-        c.weightx = 0.0;
-        c.gridwidth = 8;
-        c.gridx = -3;
-        c.gridy = 0;
         scroll1.getViewport().add(reLeafMainMessageBox);
-        //scroll1.setPreferredSize(new Dimension(200,100));
-        panel.add(scroll1,c);
+        scroll1.setBounds(50,50,1200,400);
+        frame.add(scroll1);
 
 
         /*userInput text area*/
@@ -56,24 +46,21 @@ public class ReLeafMain {
         JTextArea userTextArea = new JTextArea();
         userTextArea.setFont(new Font("Arial", Font.BOLD, 12));
         userTextArea.setLineWrap(true);
-        c.gridx = 1;
-        c.gridy = 3;
         scroll2.getViewport().add(userTextArea);
-        //scroll2.setPreferredSize(new Dimension(200,100));
-        panel.add(scroll2,c);
+        scroll2.setBounds(50,450,700,200);
+        frame.add(scroll2);
 
 
         /*button and listener for get userInput*/
         JButton sendButton = new JButton("send");
-        c.gridx = 2;
-        c.gridy = 3;
-        panel.add(sendButton,c);
+        sendButton.setBounds(800,500,100,100);
+        frame.add(sendButton);
         sendButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 /*get userInput and convert to lowercase for better readability,
                 clear userTextArea and run the generate response method*/
-                userInput = userTextArea.getText();
+                userInput = userTextArea.getText().replaceFirst("\\s++$", "");
                 reLeafMainMessageBox.append("\n\nUser: " + userInput);
                 reLeafMainMessageBox.setCaretPosition(reLeafMainMessageBox.getDocument().getLength());
                 userInput = userTextArea.getText().toLowerCase();
@@ -81,6 +68,9 @@ public class ReLeafMain {
                 ReLeafReadAndReply.GenerateResponse();
             }
         });
+
+//        JTextArea t = new JTextArea();
+//        frame.add(t);
 
 
 
