@@ -8,12 +8,14 @@ public class ReLeafReadAndReply {
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Amazing");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
-        else if(ReLeafMain.userInput.contains("sad")){
+        else if(ReLeafMain.userInput.contains("sad") ||
+                ReLeafMain.userInput.contains("im feeling sad")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Sorry to hear your feeling sad");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
-        else if(ReLeafMain.userInput.contains("i'm thinking about killing myself")){
+        else if(ReLeafMain.userInput.contains("i'm thinking about killing myself") ||
+                ReLeafMain.userInput.contains("im thinking about killing myself")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Ok, maybe suicide is not the right answer");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
@@ -25,7 +27,8 @@ public class ReLeafReadAndReply {
 
         }
         else if(ReLeafMain.userInput.contains("are you gonna help me") ||
-                ReLeafMain.userInput.contains("are you going to help me")){
+                ReLeafMain.userInput.contains("are you going to help me") ||
+                ReLeafMain.userInput.contains("help")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: I can offer you a range of responses which" +
                     " may help you figure out your current issue");

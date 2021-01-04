@@ -1,7 +1,10 @@
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
 
 import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
@@ -69,8 +72,12 @@ public class ReLeafMain {
             }
         });
 
-//        JTextArea t = new JTextArea();
-//        frame.add(t);
+        /*added to stop last element(button) from glitching*/
+        JLabel label = new JLabel();
+        frame.add(label);
+
+        Image image = Toolkit.getDefaultToolkit().getImage(ReLeafMain.class.getResource("releaf_icon.png"));
+        frame.setIconImage(image);
 
 
 
