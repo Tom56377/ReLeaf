@@ -1,10 +1,14 @@
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.swing.border.Border;
+import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
@@ -21,14 +25,15 @@ public class ReLeafMain {
         /*create window*/
         JFrame frame = new JFrame("ReLeaf");  //create frame
         frame.getContentPane().setPreferredSize(new Dimension(500,350));
-        /*create window continued*/
+        Image image = Toolkit.getDefaultToolkit().getImage(ReLeafMain.class.getResource("images/releaf_icon.png"));
+        frame.setIconImage(image);
         frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setVisible(true);
+        frame.setLayout(new BorderLayout());
         frame.getContentPane().setBackground(new Color(235, 255, 235));
-
 
         /*userInput text area*/
         JScrollPane scroll1 = new JScrollPane ();
@@ -42,6 +47,9 @@ public class ReLeafMain {
         scroll1.setBounds(50,50,1200,400);
         frame.add(scroll1);
 
+        Border border1 = BorderFactory.createLineBorder(Color.BLACK);
+        reLeafMainMessageBox.setBorder(BorderFactory.createCompoundBorder(border1,
+        BorderFactory.createEmptyBorder(10, 10, 10, 10)));
 
         /*userInput text area*/
         JScrollPane scroll2 = new JScrollPane ();
@@ -54,10 +62,17 @@ public class ReLeafMain {
         scroll2.setBounds(50,450,700,200);
         frame.add(scroll2);
 
+        Border border2 = BorderFactory.createLineBorder(Color.BLACK);
+        userTextArea.setBorder(BorderFactory.createCompoundBorder(border2,
+        BorderFactory.createEmptyBorder(10, 10, 10, 10)));
 
         /*button and listener for get userInput*/
         JButton sendButton = new JButton("Send");
-        sendButton.setBounds(800,500,100,50);
+        sendButton.setFont(new Font("Arial", Font.BOLD, 14));
+        sendButton.setForeground(Color.BLACK);
+        sendButton.setBackground(new Color(217, 255, 217));
+        sendButton.setBorder(new LineBorder(Color.BLACK));
+        sendButton.setBounds(800,520,100,50);
         frame.add(sendButton);
         sendButton.addActionListener(new ActionListener() {
             @Override
@@ -84,8 +99,7 @@ public class ReLeafMain {
         frame.add(label);
         label.setBounds(0,0,0,0);
 
-        Image image = Toolkit.getDefaultToolkit().getImage(ReLeafMain.class.getResource("releaf_icon.png"));
-        frame.setIconImage(image);
+
 
 
 
