@@ -93,11 +93,45 @@ public class ReLeafMain {
             }
         });
 
+        /*help button*/
+        JButton helpButton = new JButton("Help");
+        helpButton.setFont(new Font("Arial", Font.BOLD, 14));
+        helpButton.setForeground(Color.BLACK);
+        helpButton.setBackground(Color.WHITE);
+        helpButton.setBorder(new LineBorder(Color.BLACK));
+        helpButton.setBounds(1200,600,100,50);
+        frame.add(helpButton);
+        helpButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                /*open jFrame that proves help information*/
+                JFrame helpFrame = new JFrame("ReLeaf Help");
+                helpFrame.getContentPane().setPreferredSize(new Dimension(500,350));
+                Image image2 = Toolkit.getDefaultToolkit().getImage(ReLeafMain.class.getResource("images/help_icon.png"));
+                helpFrame.setIconImage(image2);
+                helpFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+                helpFrame.pack();
+                helpFrame.setLocationRelativeTo(null);
+                helpFrame.setVisible(true);
+                helpFrame.setLayout(new BorderLayout());
+                //helpFrame.getContentPane().setBackground(new Color(235, 255, 235));
 
-        /*added to stop last element(button) from glitching*/
-        JLabel label = new JLabel();
-        frame.add(label);
-        label.setBounds(0,0,0,0);
+                JTextArea helpTextArea = new JTextArea("ReLeaf does not record or use your data, anything" +
+                        " you say is essentially confidential.\n" +
+                        "\n##HOW TO USE##\n" +
+                        "Start by asking questions, anything that comes to mind, ReLeaf will offer" +
+                        " responses\nand offer a virtual conversation.");
+                helpTextArea.setEditable(false);
+                helpFrame.add(helpTextArea);
+
+            }
+        });
+
+
+//        /*added to stop last element(button) from glitching*/
+//        JLabel label = new JLabel();
+//        frame.add(label);
+//        label.setBounds(0,0,0,0);
 
 
 
