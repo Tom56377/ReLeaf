@@ -109,7 +109,7 @@ public class ReLeafMain {
                 helpFrame.getContentPane().setPreferredSize(new Dimension(500,350));
                 Image image2 = Toolkit.getDefaultToolkit().getImage(ReLeafMain.class.getResource("images/help_icon.png"));
                 helpFrame.setIconImage(image2);
-                helpFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+                //helpFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
                 helpFrame.pack();
                 helpFrame.setLocationRelativeTo(null);
                 helpFrame.setVisible(true);
@@ -128,10 +128,10 @@ public class ReLeafMain {
         });
 
 
-//        /*added to stop last element(button) from glitching*/
-//        JLabel label = new JLabel();
-//        frame.add(label);
-//        label.setBounds(0,0,0,0);
+        /*added to stop last element(button) from glitching*/
+        JLabel label = new JLabel();
+        frame.add(label);
+        label.setBounds(0,0,0,0);
 
 
 
