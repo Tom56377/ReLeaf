@@ -28,12 +28,54 @@ public class ReLeafMain {
         Image image = Toolkit.getDefaultToolkit().getImage(ReLeafMain.class.getResource("images/releaf_icon.png"));
         frame.setIconImage(image);
         frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        frame.pack();
         frame.setVisible(true);
-        frame.setLayout(new BorderLayout());
-        frame.getContentPane().setBackground(new Color(235, 255, 235));
+        //frame.setLayout(new BorderLayout());
+
+        BufferedImage ls = null;
+        try {
+            ls = ImageIO.read(new File("C:\\Users\\tbutt\\Documents\\IdeaProjects\\ce301_buttwell_tom_p_r\\src\\images\\indigo_logo_landscape.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        frame.setContentPane(new LoadingScreen(ls));
+        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        frame.setVisible(true);
+
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
+        try {
+            ls = ImageIO.read(new File("C:\\Users\\tbutt\\Documents\\IdeaProjects\\ce301_buttwell_tom_p_r\\src\\images\\releaf_icon_wide.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        frame.setContentPane(new LoadingScreen(ls));
+        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        frame.setVisible(true);
+
+
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            ls = ImageIO.read(new File("C:\\Users\\tbutt\\Documents\\IdeaProjects\\ce301_buttwell_tom_p_r\\src\\images\\main_background.jpg"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        frame.setContentPane(new LoadingScreen(ls));
+        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        frame.setVisible(true);
+
 
         /*userInput text area*/
         JScrollPane scroll1 = new JScrollPane ();
@@ -44,8 +86,8 @@ public class ReLeafMain {
         reLeafMainMessageBox.setWrapStyleWord(true);
         reLeafMainMessageBox.setEditable(false);
         scroll1.getViewport().add(reLeafMainMessageBox);
-        scroll1.setBounds(50,50,1200,400);
         frame.add(scroll1);
+        scroll1.setBounds(50,50,1200,400);
 
         Border border1 = BorderFactory.createLineBorder(Color.BLACK);
         reLeafMainMessageBox.setBorder(BorderFactory.createCompoundBorder(border1,
@@ -59,8 +101,8 @@ public class ReLeafMain {
         userTextArea.setBackground(new Color(217, 255, 217));
         userTextArea.setLineWrap(true);
         scroll2.getViewport().add(userTextArea);
-        scroll2.setBounds(50,450,700,200);
         frame.add(scroll2);
+        scroll2.setBounds(50,450,700,200);
 
         Border border2 = BorderFactory.createLineBorder(Color.BLACK);
         userTextArea.setBorder(BorderFactory.createCompoundBorder(border2,
@@ -72,8 +114,8 @@ public class ReLeafMain {
         sendButton.setForeground(Color.BLACK);
         sendButton.setBackground(new Color(217, 255, 217));
         sendButton.setBorder(new LineBorder(Color.BLACK));
-        sendButton.setBounds(800,520,100,50);
         frame.add(sendButton);
+        sendButton.setBounds(800,520,100,50);
         sendButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -99,8 +141,8 @@ public class ReLeafMain {
         helpButton.setForeground(Color.BLACK);
         helpButton.setBackground(Color.WHITE);
         helpButton.setBorder(new LineBorder(Color.BLACK));
-        helpButton.setBounds(1200,600,100,50);
         frame.add(helpButton);
+        helpButton.setBounds(1200,600,100,50);
         helpButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
