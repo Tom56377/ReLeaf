@@ -35,10 +35,10 @@ public class ReLeafReadAndReply {
 
 
         else if(ReLeafMain.userInput.contains("i'm thinking about killing myself") ||
-                ReLeafMain.userInput.contains("im thinking about killing myself")){
+                ReLeafMain.userInput.contains("im thinking about killing myself")||
+                ReLeafMain.userInput.contains("i wanna die")){
 
-            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Ok, maybe suicide is not the right answer." +
-                    " Here are some contacts i can provide who may be able to help better than me right now." +
+            ReLeafMain.reLeafMainMessageBox.append("Here are some contacts i can provide who may be able to help better than me right now." +
                     "" +
                     "\n\n1.Samaritans can be called anytime day or night for free by phoning 116 123.\n" +
                     "http://www.samaritans.org/how-we-can-help-you/contact-us\n");
@@ -72,7 +72,8 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("i don't know what to do with my life") ||
                 ReLeafMain.userInput.contains("i dunno what to do with my life") ||
                 ReLeafMain.userInput.contains("do you have any idea on what i should do with my life") ||
-                ReLeafMain.userInput.contains("what should i do with my life")){
+                ReLeafMain.userInput.contains("what should i do with my life") ||
+                ReLeafMain.userInput.contains("what can i do")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: It sounds like you are confused, maybe we can find out what you enjoy and what" +
                     " you don't enjoy, that way we can find what it is you would like to do?");
@@ -122,6 +123,35 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("love me")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: The question is do you love yourself?");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("im lonely") ||
+                ReLeafMain.userInput.contains("i'm lonely") ||
+                ReLeafMain.userInput.contains("im feeling alone") ||
+                ReLeafMain.userInput.contains("i'm feeling alone")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Do you feel there is any way you can make your life more social?");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("whats the point in life") ||
+                ReLeafMain.userInput.contains("what is the point in life") ||
+                ReLeafMain.userInput.contains("what is the purpose of life") ||
+                ReLeafMain.userInput.contains("what is the purpose in living")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Personally i feel the point in life is to live comfortably and" +
+                    " be happy. How do you think we can achieve that?");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("why am i here") ||
+                ReLeafMain.userInput.contains("why do i exist") ||
+                ReLeafMain.userInput.contains("whats my purpose") ||
+                ReLeafMain.userInput.contains("what's my purpose")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: It seems you are feeling a bit purposeless, " +
+                    "what do you think you could include in your life to make you feel you have more purpose?");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
 

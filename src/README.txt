@@ -17,5 +17,5 @@ How to use the program
 Once the program is running you can use the program by
 asking the bot questions, simply just say anything that
 comes to mind particularly things related to mental health.
-Hopefully the bot will reply with relevent responses that 
+Hopefully the bot will reply with relevant responses that
 offer relief or clarity.

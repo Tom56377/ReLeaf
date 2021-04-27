@@ -78,7 +78,7 @@ public class ReLeafMain {
 
 
         /*userInput text area*/
-        JScrollPane scroll1 = new JScrollPane ();
+        JScrollPane scroll1 = new JScrollPane();
         scroll1.setVerticalScrollBarPolicy(scroll1.VERTICAL_SCROLLBAR_ALWAYS);
         reLeafMainMessageBox.setFont(new Font("Arial", Font.BOLD, 14));
         reLeafMainMessageBox.setBackground(new Color(217, 255, 217));
@@ -126,6 +126,7 @@ public class ReLeafMain {
 
                 if(userInput.isEmpty() || userInput.equals(" ")){}
                     else{
+
                         userInput = userTextArea.getText().replaceFirst("\\s++$", "");
                         reLeafMainMessageBox.append("\n\nUser: " + userInput);
                         reLeafMainMessageBox.setCaretPosition(reLeafMainMessageBox.getDocument().getLength());
@@ -168,6 +169,10 @@ public class ReLeafMain {
 
             }
         });
+
+        JLabel versionLabel = new JLabel("ReLeaf Version: 1.0");
+        frame.add(versionLabel);
+        versionLabel.setBounds(1195,580,200,200);
 
 
         /*added to stop last element(button) from glitching*/
