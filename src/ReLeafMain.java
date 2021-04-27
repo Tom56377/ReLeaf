@@ -34,6 +34,7 @@ public class ReLeafMain {
         frame.setVisible(true);
         //frame.setLayout(new BorderLayout());
 
+        /*loading screens*/
         BufferedImage ls = null;
         try {
             ls = ImageIO.read(new File("C:\\Users\\tbutt\\Documents\\IdeaProjects\\ce301_buttwell_tom_p_r\\src\\images\\indigo_logo_landscape.png"));
@@ -170,6 +171,7 @@ public class ReLeafMain {
             }
         });
 
+        /*version label*/
         JLabel versionLabel = new JLabel("ReLeaf Version: 1.0");
         frame.add(versionLabel);
         versionLabel.setBounds(1195,580,200,200);
