@@ -148,7 +148,7 @@ public class ReLeafMain {
         helpButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                /*open jFrame that proves help information*/
+                /*open jFrame that provides help information*/
                 JFrame helpFrame = new JFrame("ReLeaf Help");
                 helpFrame.getContentPane().setPreferredSize(new Dimension(500,350));
                 Image image2 = Toolkit.getDefaultToolkit().getImage(ReLeafMain.class.getResource("images/help_icon.png"));

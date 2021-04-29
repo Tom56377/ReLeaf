@@ -35,13 +35,58 @@ public class ReLeafReadAndReply {
 
 
         else if(ReLeafMain.userInput.contains("i'm thinking about killing myself") ||
-                ReLeafMain.userInput.contains("im thinking about killing myself")||
-                ReLeafMain.userInput.contains("i wanna die")){
+                ReLeafMain.userInput.contains("im thinking about killing myself") ||
+                ReLeafMain.userInput.contains("i wanna die") ||
+                ReLeafMain.userInput.contains("i want to die") ||
+                ReLeafMain.userInput.contains("just wanna die") ||
+                ReLeafMain.userInput.contains("just want to die") ||
+                ReLeafMain.userInput.contains("i think i should off myself") ||
+                ReLeafMain.userInput.contains("im getting suicidal") ||
+                ReLeafMain.userInput.contains("i'm getting suicidal") ||
+                ReLeafMain.userInput.contains("im suicidal") ||
+                ReLeafMain.userInput.contains("i'm suicidal") ||
+                ReLeafMain.userInput.contains("jump off a cliff") ||
+                ReLeafMain.userInput.contains("think i should take my own life") ||
+                ReLeafMain.userInput.contains("better off dead") ||
+                ReLeafMain.userInput.contains("better off deceased") ||
+                ReLeafMain.userInput.contains("im gonna hang myself") ||
+                ReLeafMain.userInput.contains("i'm gonna hang myself") ||
+                ReLeafMain.userInput.contains("might drink bleach") ||
+                ReLeafMain.userInput.contains("6 feet under") ||
+                ReLeafMain.userInput.contains("6 ft under") ||
+                ReLeafMain.userInput.contains("cut myself") ||
+                ReLeafMain.userInput.contains("shoot myself") ||
+                ReLeafMain.userInput.contains("blow my head off") ||
+                ReLeafMain.userInput.contains("blow myself away") ||
+                ReLeafMain.userInput.contains("jump off a building") ||
+                ReLeafMain.userInput.contains("your not helping") ||
+                ReLeafMain.userInput.contains("your useless") ||
+                ReLeafMain.userInput.contains("you are useless") ||
+                ReLeafMain.userInput.contains("you are not helping") ||
+                ReLeafMain.userInput.contains("sick of this") ||
+                ReLeafMain.userInput.contains("cut me") ||
+                ReLeafMain.userInput.contains("shoot me") ||
+                ReLeafMain.userInput.contains("hang me") ||
+                ReLeafMain.userInput.contains("gonna die") ||
+                ReLeafMain.userInput.contains("going to die")){
 
-            ReLeafMain.reLeafMainMessageBox.append("Here are some contacts i can provide who may be able to help better than me right now." +
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Here are some contacts i can provide who may be able to help better than me right now." +
                     "" +
-                    "\n\n1.Samaritans can be called anytime day or night for free by phoning 116 123.\n" +
-                    "http://www.samaritans.org/how-we-can-help-you/contact-us\n");
+                    "\n\n1. NELFT Mental Health Direct\n" +
+                    "Tel: 0300 555 1000" +
+                    "\n\n2. Samaritans can be called anytime day or night for free by phoning 116 123.\n" +
+                    "http://www.samaritans.org/how-we-can-help-you/contact-us" +
+                    "\n\n3. The Calm Zone (for men at risk of suicide)\n" +
+                    "Tel: 0800 58 58 58\n" +
+                    "https://www.thecalmzone.net/help/get-help/" +
+                    "\n\n4. Hopeline UK (young person's crisis line)\n" +
+                    "Tel: 08000 68 41 41\n" +
+                    "Text: 07786 209 697" +
+                    "\n\nOnline Self Help\n" +
+                    "https://www.mind.org.uk/information-support/\n" +
+                    "https://web.ntw.nhs.uk/selfhelp/\n" +
+                    "https://www.anxietybc.com/adults/\n" +
+                    "http://www.themix.org.uk/apps-and-tools (for under 25's)");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
 
@@ -59,7 +104,29 @@ public class ReLeafReadAndReply {
 
         else if(ReLeafMain.userInput.contains("are you gonna help me") ||
                 ReLeafMain.userInput.contains("are you going to help me") ||
-                ReLeafMain.userInput.contains("help")){
+                ReLeafMain.userInput.contains("what can you do") ||
+                ReLeafMain.userInput.contains("what you gonna do") ||
+                ReLeafMain.userInput.contains("what are you going to do") ||
+                ReLeafMain.userInput.contains("what is it that you can do") ||
+                ReLeafMain.userInput.contains("worth talking to you") ||
+                ReLeafMain.userInput.contains("why dont you save me") ||
+                ReLeafMain.userInput.contains("why wont you save me")||
+                ReLeafMain.userInput.contains("gonna help me") ||
+                ReLeafMain.userInput.contains("going to help me") ||
+                ReLeafMain.userInput.contains("can you make it worth my while") ||
+                ReLeafMain.userInput.contains("why don't you save me") ||
+                ReLeafMain.userInput.contains("what can we do together") ||
+                ReLeafMain.userInput.contains("what are we gonna do") ||
+                ReLeafMain.userInput.contains("what are we going to do") ||
+                ReLeafMain.userInput.contains("are you gonna save me") ||
+                ReLeafMain.userInput.contains("are you going to save me") ||
+                ReLeafMain.userInput.contains("what we gonna do") ||
+                ReLeafMain.userInput.contains("what we going to do") ||
+                ReLeafMain.userInput.contains("do together") ||
+                ReLeafMain.userInput.contains("do this together") ||
+                ReLeafMain.userInput.contains("me together")  ||
+                ReLeafMain.userInput.contains("save me")  ||
+                ReLeafMain.userInput.contains("help me")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: I can offer you a range of responses which" +
                     " may help you figure out your current issue, or at least i can be just someone to talk to.");
@@ -92,25 +159,29 @@ public class ReLeafReadAndReply {
 
         else if(ReLeafMain.userInput.contains("i'm always feeling low") ||
                 ReLeafMain.userInput.contains("im always feeling low") ||
-                ReLeafMain.userInput.contains("i am always feeling low")){
-
-            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Sorry to hear your feeling low, what do you think might" +
-                    " lift your mood?");
-            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
-
-        }
-
-        else if(ReLeafMain.userInput.contains("i'm hurting") ||
+                ReLeafMain.userInput.contains("i am always feeling low") ||
+                ReLeafMain.userInput.contains("im low") ||
+                ReLeafMain.userInput.contains("i am low") ||
+                ReLeafMain.userInput.contains("i'm low") ||
+                ReLeafMain.userInput.contains("im feeling low") ||
+                ReLeafMain.userInput.contains("i'm feeling low") ||
+                ReLeafMain.userInput.contains("so low") ||
+                ReLeafMain.userInput.contains("i'm hurting") ||
                 ReLeafMain.userInput.contains("im hurting") ||
-                ReLeafMain.userInput.contains("im hurtin")){
+                ReLeafMain.userInput.contains("im hurtin") ||
+                ReLeafMain.userInput.contains("feeling low") ||
+                ReLeafMain.userInput.contains("really low")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Sorry to hear your feeling low, what do you think might" +
                     " lift your mood?");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+
         }
 
         else if(ReLeafMain.userInput.contains("who are you") ||
-                ReLeafMain.userInput.contains("who are ya")){
+                ReLeafMain.userInput.contains("who are ya")  ||
+                ReLeafMain.userInput.contains("what are you") ||
+                ReLeafMain.userInput.contains("what is this")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: I am a robot and I can offer you a range of responses which" +
                     " may help you figure out your current issue, or at least i can be just someone to talk to.");
@@ -152,6 +223,16 @@ public class ReLeafReadAndReply {
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: It seems you are feeling a bit purposeless, " +
                     "what do you think you could include in your life to make you feel you have more purpose?");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("im bored") ||
+                ReLeafMain.userInput.contains("i'm bored") ||
+                ReLeafMain.userInput.contains("i am bored") ||
+                ReLeafMain.userInput.contains("bored")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Your feeling bored? What healthy activity could you do that " +
+                    "might entertain you?");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
 
