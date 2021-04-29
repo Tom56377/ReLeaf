@@ -19,7 +19,12 @@ public class ReLeafReadAndReply {
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
 
-        else if(ReLeafMain.userInput.contains("happy")){
+        else if(ReLeafMain.userInput.contains("im happy") ||
+                ReLeafMain.userInput.contains("i'm happy") ||
+                ReLeafMain.userInput.contains("i am happy") ||
+                ReLeafMain.userInput.equals("i am elated") ||
+                ReLeafMain.userInput.contains("im elated") ||
+                ReLeafMain.userInput.equals("i'm elated")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Amazing, i am pleased to hear you are happy.");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
@@ -29,7 +34,8 @@ public class ReLeafReadAndReply {
         else if(ReLeafMain.userInput.contains("sad") ||
                 ReLeafMain.userInput.contains("im feeling sad")){
 
-            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Sorry to hear your feeling sad.");
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Sorry to hear your feeling sad. What constructive " +
+                    " things could you do to lift your mood");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
 
@@ -68,7 +74,23 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("shoot me") ||
                 ReLeafMain.userInput.contains("hang me") ||
                 ReLeafMain.userInput.contains("gonna die") ||
-                ReLeafMain.userInput.contains("going to die")){
+                ReLeafMain.userInput.contains("going to die") ||
+                ReLeafMain.userInput.contains("suicide") ||
+                ReLeafMain.userInput.contains("suicidal") ||
+                ReLeafMain.userInput.contains("kill") ||
+                ReLeafMain.userInput.contains("harm") ||
+                ReLeafMain.userInput.contains("hurt") ||
+                ReLeafMain.userInput.contains("this is annoying") ||
+                ReLeafMain.userInput.contains("annoying me now") ||
+                ReLeafMain.userInput.contains("this is a joke") ||
+                ReLeafMain.userInput.contains("your so annoying") ||
+                ReLeafMain.userInput.contains("your a joke") ||
+                ReLeafMain.userInput.contains("you are annoying") ||
+                ReLeafMain.userInput.contains("you are a joke") ||
+                ReLeafMain.userInput.contains("this is a calamity") ||
+                ReLeafMain.userInput.contains("stop being annoying") ||
+                ReLeafMain.userInput.contains("annoying me") ||
+                ReLeafMain.userInput.contains("this is crap")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Here are some contacts i can provide who may be able to help better than me right now." +
                     "" +
@@ -94,7 +116,11 @@ public class ReLeafReadAndReply {
         else if(ReLeafMain.userInput.contains("im ok") ||
                 ReLeafMain.userInput.contains("i'm ok") ||
                 ReLeafMain.userInput.contains("i'm alright") ||
-                ReLeafMain.userInput.contains("im alright")){
+                ReLeafMain.userInput.contains("im alright")  ||
+                ReLeafMain.userInput.contains("doing alright") ||
+                ReLeafMain.userInput.contains("doing ok") ||
+                ReLeafMain.userInput.contains("doin alright") ||
+                ReLeafMain.userInput.contains("doin ok")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Being ok is positive, its good to hear.");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
@@ -125,8 +151,12 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("do together") ||
                 ReLeafMain.userInput.contains("do this together") ||
                 ReLeafMain.userInput.contains("me together")  ||
-                ReLeafMain.userInput.contains("save me")  ||
-                ReLeafMain.userInput.contains("help me")){
+                ReLeafMain.userInput.contains("save me") ||
+                ReLeafMain.userInput.contains("help") ||
+                ReLeafMain.userInput.contains("solution") ||
+                ReLeafMain.userInput.contains("solutions") ||
+                ReLeafMain.userInput.contains("something for me") ||
+                ReLeafMain.userInput.contains("summin for me")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: I can offer you a range of responses which" +
                     " may help you figure out your current issue, or at least i can be just someone to talk to.");
@@ -172,8 +202,8 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("feeling low") ||
                 ReLeafMain.userInput.contains("really low")){
 
-            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Sorry to hear your feeling low, what do you think might" +
-                    " lift your mood?");
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Sorry to hear your feeling low,  What do you think might be bringing you down?" +
+                    " What do you think might lift your mood?");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
 
         }
@@ -181,7 +211,12 @@ public class ReLeafReadAndReply {
         else if(ReLeafMain.userInput.contains("who are you") ||
                 ReLeafMain.userInput.contains("who are ya")  ||
                 ReLeafMain.userInput.contains("what are you") ||
-                ReLeafMain.userInput.contains("what is this")){
+                ReLeafMain.userInput.contains("what is this") ||
+                ReLeafMain.userInput.contains("what am i looking for here")  ||
+                ReLeafMain.userInput.contains("whats the point in this") ||
+                ReLeafMain.userInput.contains("what is the point here")  ||
+                ReLeafMain.userInput.contains("what is the point in this") ||
+                ReLeafMain.userInput.contains("this is pointless")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: I am a robot and I can offer you a range of responses which" +
                     " may help you figure out your current issue, or at least i can be just someone to talk to.");
@@ -191,9 +226,13 @@ public class ReLeafReadAndReply {
         else if(ReLeafMain.userInput.contains("do you love me") ||
                 ReLeafMain.userInput.contains("can you love me") ||
                 ReLeafMain.userInput.contains("will you love me") ||
-                ReLeafMain.userInput.contains("love me")){
+                ReLeafMain.userInput.contains("i want to be in love") ||
+                ReLeafMain.userInput.contains("i want love") ||
+                ReLeafMain.userInput.contains("i want someone to love") ||
+                ReLeafMain.userInput.contains("i want somebody to love")){
 
-            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: The question is do you love yourself?");
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: The question is do you love yourself? Maybe finding" +
+                    " a way to have love for yourself is the right solution.");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
 
@@ -236,8 +275,138 @@ public class ReLeafReadAndReply {
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
 
+        else if(ReLeafMain.userInput.contains("what colors the sun") ||
+                ReLeafMain.userInput.contains("what colour is the sun") ||
+                ReLeafMain.userInput.contains("what colours the sun") ||
+                ReLeafMain.userInput.contains("what color is the sun")  ||
+                ReLeafMain.userInput.contains("what is the colour of the sun") ||
+                ReLeafMain.userInput.contains("what is the color of the sun") ||
+                ReLeafMain.userInput.contains("whats the colour of the sun") ||
+                ReLeafMain.userInput.contains("whats the color of the sun") ||
+                ReLeafMain.userInput.contains("what's the colour of the sun") ||
+                ReLeafMain.userInput.contains("what's the color of the sun")){
 
-        /*default communication issue message*/
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Its yellow of course.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("what colors the moon") ||
+                ReLeafMain.userInput.contains("what colour is the moon") ||
+                ReLeafMain.userInput.contains("what colours the moon") ||
+                ReLeafMain.userInput.contains("what color is the moon") ||
+                ReLeafMain.userInput.contains("what is the colour of the moon") ||
+                ReLeafMain.userInput.contains("what is the color of the moon") ||
+                ReLeafMain.userInput.contains("whats the colour of the moon") ||
+                ReLeafMain.userInput.contains("whats the color of the moon") ||
+                ReLeafMain.userInput.contains("what's the colour of the moon") ||
+                ReLeafMain.userInput.contains("what's the color of the moon")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Its grey.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("whats your favorite colour") ||
+                ReLeafMain.userInput.contains("what's your favorite colour") ||
+                ReLeafMain.userInput.contains("whats your favorite color") ||
+                ReLeafMain.userInput.contains("what's your favorite color") ||
+                ReLeafMain.userInput.contains("what is your favorite colour") ||
+                ReLeafMain.userInput.contains("what is your favorite color") ||
+                ReLeafMain.userInput.contains("do you have a favorite colour") ||
+                ReLeafMain.userInput.contains("do you have a favorite color") ||
+                ReLeafMain.userInput.contains("whats your favourite colour") ||
+                ReLeafMain.userInput.contains("what's your favourite colour") ||
+                ReLeafMain.userInput.contains("whats your favourite color") ||
+                ReLeafMain.userInput.contains("what's your favourite color") ||
+                ReLeafMain.userInput.contains("what is your favourite colour") ||
+                ReLeafMain.userInput.contains("what is your favourite color") ||
+                ReLeafMain.userInput.contains("do you have a favourite colour") ||
+                ReLeafMain.userInput.contains("your favourite color") ||
+                ReLeafMain.userInput.contains("your favourite colour") ||
+                ReLeafMain.userInput.contains("do you have a favourite color") ||
+                ReLeafMain.userInput.contains("your favorite colour") ||
+                ReLeafMain.userInput.contains("your favorite color")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: My favourite colour is Green.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("biggest animal") ||
+                ReLeafMain.userInput.contains("largest animal") ||
+                ReLeafMain.userInput.contains("largest creature") ||
+                ReLeafMain.userInput.contains("biggest creature") ||
+                ReLeafMain.userInput.contains("largest living thing") ||
+                ReLeafMain.userInput.contains("biggest living thing") ||
+                ReLeafMain.userInput.contains("largest thing alive") ||
+                ReLeafMain.userInput.contains("biggest thing to have ever lived") ||
+                ReLeafMain.userInput.contains("biggest thing to have lived") ||
+                ReLeafMain.userInput.contains("largest thing to have ever lived") ||
+                ReLeafMain.userInput.contains("largest thing to have lived")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: The Blue Whale.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("sing to me") ||
+                ReLeafMain.userInput.contains("can you sing") ||
+                ReLeafMain.userInput.contains("can you sing me a song") ||
+                ReLeafMain.userInput.contains("what songs can you sing") ||
+                ReLeafMain.userInput.contains("sing me a song") ||
+                ReLeafMain.userInput.contains("are you gonna sing") ||
+                ReLeafMain.userInput.contains("are you going to sing") ||
+                ReLeafMain.userInput.contains("lets sing")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: I am a robot and have no vocal cords," +
+                    " sorry my friend.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("whats your favorite number") ||
+                ReLeafMain.userInput.contains("what's your favorite number") ||
+                ReLeafMain.userInput.contains("what is your favorite number") ||
+                ReLeafMain.userInput.contains("do you have a favorite number") ||
+                ReLeafMain.userInput.contains("whats your favourite number") ||
+                ReLeafMain.userInput.contains("what's your favourite number") ||
+                ReLeafMain.userInput.contains("what is your favourite number") ||
+                ReLeafMain.userInput.contains("do you have a favourite number")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: I like all numbers, even the minus ones.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("where you from") ||
+                ReLeafMain.userInput.contains("where do you come from") ||
+                ReLeafMain.userInput.contains("where are you from") ||
+                ReLeafMain.userInput.contains("where was you born") ||
+                ReLeafMain.userInput.contains("whats your location") ||
+                ReLeafMain.userInput.contains("what's your location") ||
+                ReLeafMain.userInput.contains("what is your location") ||
+                ReLeafMain.userInput.contains("do you live")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: I was created on and inhabit planet Earth, in the " +
+                    "United Kingdom.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("are you alive") ||
+                ReLeafMain.userInput.contains("are you living")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: I am a robot so i am not a " +
+                    "living thing.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("tell me something interesting") ||
+                ReLeafMain.userInput.contains("interest me") ||
+                ReLeafMain.userInput.contains("make me interested") ||
+                ReLeafMain.userInput.contains("do something interesting")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: What sort of constructive things " +
+                    "interest you?");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+
+            /*default communication issue message*/
         else {
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Sorry i didn't quite catch that, could you make that clearer? " +

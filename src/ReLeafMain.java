@@ -133,7 +133,8 @@ public class ReLeafMain {
                         reLeafMainMessageBox.setCaretPosition(reLeafMainMessageBox.getDocument().getLength());
                         userInput = userTextArea.getText().toLowerCase();
                         userTextArea.setText("");
-                        ReLeafReadAndReply.GenerateResponse();}
+                        ReLeafReadAndReply.GenerateResponse();
+                    }
             }
         });
 
@@ -164,7 +165,8 @@ public class ReLeafMain {
                         " you say is essentially confidential.\n" +
                         "\n##HOW TO USE##\n" +
                         "Start by asking questions, anything that comes to mind, ReLeaf will offer" +
-                        " responses\nand offer a virtual conversation.");
+                        " responses\nand offer a virtual conversation. Try to speak on a basic level" +
+                        " and try not to speak in\nthe 3rd person.");
                 helpTextArea.setEditable(false);
                 helpFrame.add(helpTextArea);
 
