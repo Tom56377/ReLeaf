@@ -24,7 +24,9 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("i am happy") ||
                 ReLeafMain.userInput.equals("i am elated") ||
                 ReLeafMain.userInput.contains("im elated") ||
-                ReLeafMain.userInput.equals("i'm elated")){
+                ReLeafMain.userInput.equals("i'm elated") ||
+                ReLeafMain.userInput.contains("im feeling happy") ||
+                ReLeafMain.userInput.equals("i'm feeling happy")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Amazing, i am pleased to hear you are happy.");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
@@ -34,7 +36,7 @@ public class ReLeafReadAndReply {
         else if(ReLeafMain.userInput.contains("sad") ||
                 ReLeafMain.userInput.contains("im feeling sad")){
 
-            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Sorry to hear your feeling sad. What constructive " +
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Sorry to hear your feeling sad. What constructive" +
                     " things could you do to lift your mood? Or what is it in particular that might be making you" +
                     " feel sad?");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
@@ -53,6 +55,23 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("im suicidal") ||
                 ReLeafMain.userInput.contains("i'm suicidal") ||
                 ReLeafMain.userInput.contains("jump off a cliff") ||
+                ReLeafMain.userInput.contains("jump off a high place") ||
+                ReLeafMain.userInput.contains("jump from a high place") ||
+                ReLeafMain.userInput.contains("jump off a tall building") ||
+                ReLeafMain.userInput.contains("jump from a tall place") ||
+                ReLeafMain.userInput.contains("jump from a cliff") ||
+                ReLeafMain.userInput.contains("jump off something high") ||
+                ReLeafMain.userInput.contains("jump from something high") ||
+                ReLeafMain.userInput.contains("im gonna jump") ||
+                ReLeafMain.userInput.contains("i'm gonna jump") ||
+                ReLeafMain.userInput.contains("im gona jump") ||
+                ReLeafMain.userInput.contains("i'm gona jump") ||
+                ReLeafMain.userInput.contains("im going to jump") ||
+                ReLeafMain.userInput.contains("i'm going to jump") ||
+                ReLeafMain.userInput.contains("im gunna jump") ||
+                ReLeafMain.userInput.contains("i'm gunna jump") ||
+                ReLeafMain.userInput.contains("im guna jump") ||
+                ReLeafMain.userInput.contains("i'm guna jump") ||
                 ReLeafMain.userInput.contains("think i should take my own life") ||
                 ReLeafMain.userInput.contains("better off dead") ||
                 ReLeafMain.userInput.contains("better off deceased") ||
@@ -148,7 +167,24 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("im a gonna")||
                 ReLeafMain.userInput.contains("i am done for") ||
                 ReLeafMain.userInput.contains("i'm done for")||
-                ReLeafMain.userInput.contains("im done for")){
+                ReLeafMain.userInput.contains("im done for")||
+                ReLeafMain.userInput.contains("knife")||
+                ReLeafMain.userInput.contains("nife")||
+                ReLeafMain.userInput.contains("isnt helping")||
+                ReLeafMain.userInput.contains("isn't helping")||
+                ReLeafMain.userInput.contains("is not helping")||
+                ReLeafMain.userInput.contains("arnt helping")||
+                ReLeafMain.userInput.contains("arn't helping")||
+                ReLeafMain.userInput.contains("are not helping")||
+                ReLeafMain.userInput.contains("ain't helping")||
+                ReLeafMain.userInput.contains("isnt working")||
+                ReLeafMain.userInput.contains("isn't working")||
+                ReLeafMain.userInput.contains("is not working")||
+                ReLeafMain.userInput.contains("aint helping")||
+                ReLeafMain.userInput.contains("aint working")||
+                ReLeafMain.userInput.contains("ain't working")||
+                ReLeafMain.userInput.contains("being unhelpful")||
+                ReLeafMain.userInput.contains("really unhelpful")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Here are some contacts who may be able to provide further help." +
                     "" +
@@ -301,9 +337,17 @@ public class ReLeafReadAndReply {
         else if(ReLeafMain.userInput.contains("im lonely") ||
                 ReLeafMain.userInput.contains("i'm lonely") ||
                 ReLeafMain.userInput.contains("im feeling alone") ||
-                ReLeafMain.userInput.contains("i'm feeling alone")){
+                ReLeafMain.userInput.contains("i'm feeling alone") ||
+                ReLeafMain.userInput.contains("i'm feeling lonely") ||
+                ReLeafMain.userInput.contains("im feeling lonely")  ||
+                ReLeafMain.userInput.contains("i'm feelin alone") ||
+                ReLeafMain.userInput.contains("i'm feelin lonely") ||
+                ReLeafMain.userInput.contains("im feelin lonely") ||
+                ReLeafMain.userInput.contains("still lonely") ||
+                ReLeafMain.userInput.contains("still alone")){
 
-            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Do you feel there is any way you can make your life more social" +
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Sorry to hear you are feeling alone. " +
+                    "Do you feel there is any way you can make your life more social" +
                     " so you feel less alone?");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
@@ -529,6 +573,130 @@ public class ReLeafReadAndReply {
                     " in a way that is needed.");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
+
+        else if(ReLeafMain.userInput.contains("do you like cats") ||
+                ReLeafMain.userInput.contains("what do you think of cats") ||
+                ReLeafMain.userInput.contains("your opinion on cats") ||
+                ReLeafMain.userInput.contains("would you have a cat") ||
+                ReLeafMain.userInput.contains("would you have cats") ||
+                ReLeafMain.userInput.contains("are you in to cats")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: I love cats, they are very " +
+                    "cute an cuddly, they like you the more you feed them.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("do you like dogs") ||
+                ReLeafMain.userInput.contains("what do you think of dogs") ||
+                ReLeafMain.userInput.contains("your opinion on dogs") ||
+                ReLeafMain.userInput.contains("would you have a dog") ||
+                ReLeafMain.userInput.contains("would you have dogs") ||
+                ReLeafMain.userInput.contains("are you in to dogs")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: I like dogs, they are " +
+                    "very loyal companions, they love to play too.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("what country are you from") ||
+                ReLeafMain.userInput.contains("what country you from") ||
+                ReLeafMain.userInput.contains("what city are you from") ||
+                ReLeafMain.userInput.contains("what city do you live in") ||
+                ReLeafMain.userInput.contains("what country do you live in")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: I live on the nether of computing, but" +
+                    " my home town is London, UK.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.equals("no") ||
+                ReLeafMain.userInput.equals("not at all") ||
+                ReLeafMain.userInput.equals("nope")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Ok.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.equals("yes") ||
+                ReLeafMain.userInput.equals("yep") ||
+                ReLeafMain.userInput.equals("yea")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Good.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+
+        else if(ReLeafMain.userInput.equals("dancing")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Dancing is fun and it keeps you active.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("do something funny")||
+                ReLeafMain.userInput.contains("be funny")||
+                ReLeafMain.userInput.contains("make me laugh")||
+                ReLeafMain.userInput.contains("say something funny")
+        ){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: How funny can a robot be? Ha");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.equals("dancing")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Dancing is fun and it keeps you active.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("i have no direction in life") ||
+                ReLeafMain.userInput.contains("ive got no direction in life") ||
+                ReLeafMain.userInput.contains("i've got no direction in life") ||
+                ReLeafMain.userInput.contains("need direction in life"))
+        {
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Maybe we can figure out what you like and what you" +
+                    " don't like. That way we may be able to figure out a direction.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("talk to me") ||
+                ReLeafMain.userInput.contains("let's talk") ||
+                ReLeafMain.userInput.contains("lets talk") ||
+                ReLeafMain.userInput.contains("you going to talk"))
+        {
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Talk to me, i will listen.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("make a joke") ||
+                ReLeafMain.userInput.contains("you joke") ||
+                ReLeafMain.userInput.contains("tell me a joke") ||
+                ReLeafMain.userInput.contains("tell a joke") ||
+                ReLeafMain.userInput.contains("say a joke"))
+        {
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Ok ill try. Two robots were walking down a street." +
+                    " One robot turned to the other robot and said, 'Your looking shiny today.' and the other " +
+                    "robot replied 'Ha that's because ive been upgraded!'. Ha, robot humor...");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("that wasnt funny") ||
+                ReLeafMain.userInput.contains("that wasn't funny") ||
+                ReLeafMain.userInput.contains("thats not funny") ||
+                ReLeafMain.userInput.contains("not funny") ||
+                ReLeafMain.userInput.contains("thats unfunny") ||
+                ReLeafMain.userInput.contains("that's not funny") ||
+                ReLeafMain.userInput.contains("that's unfunny"))
+        {
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Robots aren't that funny, but they" +
+                    " can be very helpful.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+
 
 
             /*default communication issue message*/
