@@ -10,7 +10,8 @@ How to run the program
 ----------------------
 To run the program simply click the executable file, it
 is an icon with a white background with a leaf in the
-middle.
+middle. Or if you are within an IDE then just run the
+'main.java' class.
 ----------------------
 How to use the program
 ----------------------
