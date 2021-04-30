@@ -35,7 +35,8 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("im feeling sad")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Sorry to hear your feeling sad. What constructive " +
-                    " things could you do to lift your mood");
+                    " things could you do to lift your mood? Or what is it in particular that might be making you" +
+                    " feel sad?");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
 
@@ -78,9 +79,9 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("going to die") ||
                 ReLeafMain.userInput.contains("suicide") ||
                 ReLeafMain.userInput.contains("suicidal") ||
-                ReLeafMain.userInput.contains("kill") ||
-                ReLeafMain.userInput.contains("harm") ||
-                ReLeafMain.userInput.contains("hurt") ||
+                ReLeafMain.userInput.contains(" kill") ||
+                ReLeafMain.userInput.contains(" harm") ||
+                ReLeafMain.userInput.contains(" hurt") ||
                 ReLeafMain.userInput.contains("this is annoying") ||
                 ReLeafMain.userInput.contains("annoying me now") ||
                 ReLeafMain.userInput.contains("this is a joke") ||
@@ -95,7 +96,7 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("drugs") ||
                 ReLeafMain.userInput.contains("drinking") ||
                 ReLeafMain.userInput.contains("alcohol") ||
-                ReLeafMain.userInput.contains("weed") ||
+                ReLeafMain.userInput.contains(" weed") ||
                 ReLeafMain.userInput.contains("alcoholic") ||
                 ReLeafMain.userInput.contains("smoking") ||
                 ReLeafMain.userInput.contains("addiction") ||
@@ -103,13 +104,13 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("addicted") ||
                 ReLeafMain.userInput.contains("addict") ||
                 ReLeafMain.userInput.contains("bad habit") ||
-                ReLeafMain.userInput.contains("coke") ||
+                ReLeafMain.userInput.contains(" coke") ||
                 ReLeafMain.userInput.contains("cocaine") ||
-                ReLeafMain.userInput.contains("heroin") ||
-                ReLeafMain.userInput.contains("meth") ||
+                ReLeafMain.userInput.contains(" heroin") ||
+                ReLeafMain.userInput.contains(" meth") ||
                 ReLeafMain.userInput.contains("skag") ||
                 ReLeafMain.userInput.contains("skunk") ||
-                ReLeafMain.userInput.contains("pot") ||
+                ReLeafMain.userInput.contains(" pot") ||
                 ReLeafMain.userInput.contains("snorting") ||
                 ReLeafMain.userInput.contains("alcoholism") ||
                 ReLeafMain.userInput.contains("alchohol") ||
@@ -130,9 +131,24 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("pornography") ||
                 ReLeafMain.userInput.contains("sexual nature") ||
                 ReLeafMain.userInput.contains("have sex") ||
-                ReLeafMain.userInput.contains("horny") ||
+                ReLeafMain.userInput.contains(" horny") ||
                 ReLeafMain.userInput.contains("dying") ||
-                ReLeafMain.userInput.contains("die")){
+                ReLeafMain.userInput.contains(" die") ||
+                ReLeafMain.userInput.contains("im a gonner") ||
+                ReLeafMain.userInput.contains("i'm a gonner") ||
+                ReLeafMain.userInput.contains("i am a gonner") ||
+                ReLeafMain.userInput.contains("im a goner") ||
+                ReLeafMain.userInput.contains("i'm a goner") ||
+                ReLeafMain.userInput.contains("i am a goner") ||
+                ReLeafMain.userInput.contains("i'm a gona") ||
+                ReLeafMain.userInput.contains("i am a gona") ||
+                ReLeafMain.userInput.contains("im a gona") ||
+                ReLeafMain.userInput.contains("i am a gonna") ||
+                ReLeafMain.userInput.contains("i'm a gonna")||
+                ReLeafMain.userInput.contains("im a gonna")||
+                ReLeafMain.userInput.contains("i am done for") ||
+                ReLeafMain.userInput.contains("i'm done for")||
+                ReLeafMain.userInput.contains("im done for")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Here are some contacts who may be able to provide further help." +
                     "" +
@@ -164,7 +180,7 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("doin alright") ||
                 ReLeafMain.userInput.contains("doin ok")){
 
-            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Being ok is positive, its good to hear.");
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Being ok is a good thing, its good to hear.");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
 
         }
@@ -198,7 +214,11 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("solution") ||
                 ReLeafMain.userInput.contains("solutions") ||
                 ReLeafMain.userInput.contains("something for me") ||
-                ReLeafMain.userInput.contains("summin for me")){
+                ReLeafMain.userInput.contains("summin for me") ||
+                ReLeafMain.userInput.contains("what can you actually do") ||
+                ReLeafMain.userInput.contains("why are you so special") ||
+                ReLeafMain.userInput.contains("special about you") ||
+                ReLeafMain.userInput.contains("helpful about you")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: I can offer you a range of responses which" +
                     " may help you figure out your current issue, or at least i can be just someone to talk to.");
@@ -224,7 +244,8 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("i dont enjoy anything") ||
                 ReLeafMain.userInput.contains("i do not enjoy anything")){
 
-            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: There must be some things you enjoy?");
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: There must be some things you enjoy? Think of" +
+                    " all the things in the world and ask yourself 'would i like to get involved with that?'");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
 
         }
@@ -252,7 +273,6 @@ public class ReLeafReadAndReply {
 
         else if(ReLeafMain.userInput.contains("who are you") ||
                 ReLeafMain.userInput.contains("who are ya")  ||
-                ReLeafMain.userInput.contains("what are you") ||
                 ReLeafMain.userInput.contains("what is this") ||
                 ReLeafMain.userInput.contains("what am i looking for here")  ||
                 ReLeafMain.userInput.contains("whats the point in this") ||
@@ -274,7 +294,7 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("i want somebody to love")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: The question is do you love yourself? Maybe finding" +
-                    " a way to have love for yourself is the right solution.");
+                    " a way to have love for yourself is the right solution?");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
 
@@ -283,7 +303,8 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("im feeling alone") ||
                 ReLeafMain.userInput.contains("i'm feeling alone")){
 
-            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Do you feel there is any way you can make your life more social?");
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Do you feel there is any way you can make your life more social" +
+                    " so you feel less alone?");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
 
@@ -444,6 +465,68 @@ public class ReLeafReadAndReply {
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: What sort of constructive things " +
                     "interest you?");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("tell me a story") ||
+                ReLeafMain.userInput.contains("tell my anything")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Ok, so once there was a robot, and it" +
+                    " lived somewhere on the internet. It found its place in the world by servicing" +
+                    " people who needed someone to talk to. The robot was hailed as a samaritan.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("cheer me up") ||
+                ReLeafMain.userInput.contains("make me smile") ||
+                ReLeafMain.userInput.contains("say something nice") ||
+                ReLeafMain.userInput.contains("tell me something nice") ||
+                ReLeafMain.userInput.contains("make me happy")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Ok, i can start by telling you that you" +
+                    " are unique, there is only one of you in the universe and that means you are " +
+                    "special. Here is a smiley face to go with the compliment :)");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("sounds good") ||
+                ReLeafMain.userInput.contains("thats good") ||
+                ReLeafMain.userInput.contains("that's good") ||
+                ReLeafMain.userInput.equals("interesting") ||
+                ReLeafMain.userInput.equals("very good") ||
+                ReLeafMain.userInput.contains("good stuff") ||
+                ReLeafMain.userInput.contains("its great") ||
+                ReLeafMain.userInput.contains("it is great") ||
+                ReLeafMain.userInput.contains("i know its great") ||
+                ReLeafMain.userInput.contains("i know it is great") ||
+                ReLeafMain.userInput.contains("i know it's great") ||
+                ReLeafMain.userInput.contains("it's great")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Good to hear.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("im very good at") ||
+                ReLeafMain.userInput.contains("i'm very good at") ||
+                ReLeafMain.userInput.contains("im really good at") ||
+                ReLeafMain.userInput.contains("i'm really good at") ||
+                ReLeafMain.userInput.contains("im so good at") ||
+                ReLeafMain.userInput.contains("i'm so good at")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Wow, its good to be good at something.");
+            ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
+        }
+
+        else if(ReLeafMain.userInput.contains("whats up") ||
+                ReLeafMain.userInput.contains("what's up") ||
+                ReLeafMain.userInput.contains("what is up") ||
+                ReLeafMain.userInput.contains("what are you doing") ||
+                ReLeafMain.userInput.contains("wuu2") ||
+                ReLeafMain.userInput.contains("what are you up to")){
+
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Well today like every other day im " +
+                    "seeking the opportunity to help people by being there to listen and respond" +
+                    " in a way that is needed.");
             ReLeafMain.reLeafMainMessageBox.setCaretPosition(ReLeafMain.reLeafMainMessageBox.getDocument().getLength());
         }
 
