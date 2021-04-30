@@ -61,6 +61,7 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("6 feet under") ||
                 ReLeafMain.userInput.contains("6 ft under") ||
                 ReLeafMain.userInput.contains("cut myself") ||
+                ReLeafMain.userInput.contains("off myself") ||
                 ReLeafMain.userInput.contains("shoot myself") ||
                 ReLeafMain.userInput.contains("blow my head off") ||
                 ReLeafMain.userInput.contains("blow myself away") ||
@@ -90,9 +91,50 @@ public class ReLeafReadAndReply {
                 ReLeafMain.userInput.contains("this is a calamity") ||
                 ReLeafMain.userInput.contains("stop being annoying") ||
                 ReLeafMain.userInput.contains("annoying me") ||
-                ReLeafMain.userInput.contains("this is crap")){
+                ReLeafMain.userInput.contains("this is crap") ||
+                ReLeafMain.userInput.contains("drugs") ||
+                ReLeafMain.userInput.contains("drinking") ||
+                ReLeafMain.userInput.contains("alcohol") ||
+                ReLeafMain.userInput.contains("weed") ||
+                ReLeafMain.userInput.contains("alcoholic") ||
+                ReLeafMain.userInput.contains("smoking") ||
+                ReLeafMain.userInput.contains("addiction") ||
+                ReLeafMain.userInput.contains("marijuana") ||
+                ReLeafMain.userInput.contains("addicted") ||
+                ReLeafMain.userInput.contains("addict") ||
+                ReLeafMain.userInput.contains("bad habit") ||
+                ReLeafMain.userInput.contains("coke") ||
+                ReLeafMain.userInput.contains("cocaine") ||
+                ReLeafMain.userInput.contains("heroin") ||
+                ReLeafMain.userInput.contains("meth") ||
+                ReLeafMain.userInput.contains("skag") ||
+                ReLeafMain.userInput.contains("skunk") ||
+                ReLeafMain.userInput.contains("pot") ||
+                ReLeafMain.userInput.contains("snorting") ||
+                ReLeafMain.userInput.contains("alcoholism") ||
+                ReLeafMain.userInput.contains("alchohol") ||
+                ReLeafMain.userInput.contains("alchoholism") ||
+                ReLeafMain.userInput.contains("alchoholic") ||
+                ReLeafMain.userInput.contains("liqueur") ||
+                ReLeafMain.userInput.contains("liquer") ||
+                ReLeafMain.userInput.contains("needle") ||
+                ReLeafMain.userInput.contains("needles") ||
+                ReLeafMain.userInput.contains("injected") ||
+                ReLeafMain.userInput.contains("injection") ||
+                ReLeafMain.userInput.contains("too much sex") ||
+                ReLeafMain.userInput.contains("alot of sex") ||
+                ReLeafMain.userInput.contains("a lot of sex") ||
+                ReLeafMain.userInput.contains("porn") ||
+                ReLeafMain.userInput.contains("cant stop having sex") ||
+                ReLeafMain.userInput.contains("porno") ||
+                ReLeafMain.userInput.contains("pornography") ||
+                ReLeafMain.userInput.contains("sexual nature") ||
+                ReLeafMain.userInput.contains("have sex") ||
+                ReLeafMain.userInput.contains("horny") ||
+                ReLeafMain.userInput.contains("dying") ||
+                ReLeafMain.userInput.contains("die")){
 
-            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Here are some contacts i can provide who may be able to help better than me right now." +
+            ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Here are some contacts who may be able to provide further help." +
                     "" +
                     "\n\n1. NELFT Mental Health Direct\n" +
                     "Tel: 0300 555 1000" +
