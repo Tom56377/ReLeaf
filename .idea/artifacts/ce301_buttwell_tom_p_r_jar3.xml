@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ce301_buttwell_tom_p_r:jar3">
+    <output-path>$PROJECT_DIR$/out/artifacts/ce301_buttwell_tom_p_r_jar3</output-path>
+    <root id="archive" name="ce301_buttwell_tom_p_r.jar">
+      <element id="module-output" name="ce301_buttwell_tom_p_r" />
+    </root>
+  </artifact>
+</component>

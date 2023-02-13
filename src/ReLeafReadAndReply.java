@@ -34,7 +34,8 @@ public class ReLeafReadAndReply {
 
 
         else if(ReLeafMain.userInput.contains("sad") ||
-                ReLeafMain.userInput.contains("im feeling sad")){
+                ReLeafMain.userInput.contains("im feeling sad") ||
+                ReLeafMain.userInput.contains("unhappy")){
 
             ReLeafMain.reLeafMainMessageBox.append("\n\nReLeaf: Sorry to hear your feeling sad. What constructive" +
                     " things could you do to lift your mood? Or what is it in particular that might be making you" +
